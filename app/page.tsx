@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Hello from "./components/hello";
 import { Poppins } from "next/font/google";
 
 const poppins = Poppins({
