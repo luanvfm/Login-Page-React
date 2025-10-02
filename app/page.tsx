@@ -1,4 +1,5 @@
 import { Poppins } from "next/font/google";
+import { AlertButton } from './components/alertButton';
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -35,7 +36,7 @@ export default function Home() {
               placeholder="Senha"
             />
             <button
-              className={`w-full border-3 font-semibold text-white border-orangecustom bg-orangecustomlight rounded-lg ${poppins.className} mt-7.5 py-3 cursor-pointer hover:bg-purplecustom hover:border-purplecustom duration-300 ease-in hover:scale-102`}
+              className={`w-full border-3 font-semibold text-white border-orangecustom bg-orangecustomlight rounded-lg ${poppins.className} mt-7.5 py-3 cursor-pointer hover:bg-purplecustom hover:border-purplecustom duration-300 ease-in hover:scale-102`} onClick={AlertButton}
             >
               LOGIN
             </button>
@@ -44,11 +45,11 @@ export default function Home() {
               <h1 className="text-orangecustom font-bold hover:text-purplecustom duration-300 ease-in cursor-pointer">OU</h1>
               <div className="flex-grow h-px bg-orangecustom"></div>
             </div>
-            <a href=""><button
-              className={`w-full border-3 font-semibold text-white border-orangecustom bg-orangecustomlight rounded-lg ${poppins.className} py-3 cursor-pointer hover:bg-purplecustom hover:border-purplecustom duration-300 ease-in hover:scale-102`} 
+            <button
+              className={`w-full border-3 font-semibold text-white border-orangecustom bg-orangecustomlight rounded-lg ${poppins.className} py-3 cursor-pointer hover:bg-purplecustom hover:border-purplecustom duration-300 ease-in hover:scale-102`} onClick={AlertButton}
             >
               CADASTRE-SE
-            </button></a>
+            </button>
             <h2
               className={`text-orangecustomlight text-center ${poppins.className} mt-7.5 hover:text-purplecustom duration-300 ease-in scale-105`}
             >

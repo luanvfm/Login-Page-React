@@ -154,7 +154,6 @@
       --tw-backdrop-sepia: initial;
       --tw-duration: initial;
       --tw-ease: initial;
-      --tw-content: "";
     }
   }
 }
@@ -872,115 +871,12 @@
     color: #130222;
   }
 
-  .placeholder\:text-white::placeholder {
-    color: var(--color-white);
-  }
-
-  .after\:absolute:after {
-    content: var(--tw-content);
-    position: absolute;
-  }
-
-  .after\:bottom-\[-2px\]:after {
-    content: var(--tw-content);
-    bottom: -2px;
-  }
-
-  .after\:left-0:after {
-    content: var(--tw-content);
-    left: calc(var(--spacing) * 0);
-  }
-
-  .after\:h-\[2px\]:after {
-    content: var(--tw-content);
-    height: 2px;
-  }
-
-  .after\:w-full:after {
-    content: var(--tw-content);
-    width: 100%;
-  }
-
-  .after\:origin-left:after {
-    content: var(--tw-content);
-    transform-origin: 0;
-  }
-
-  .after\:scale-x-0:after {
-    content: var(--tw-content);
-    --tw-scale-x: 0%;
-    scale: var(--tw-scale-x) var(--tw-scale-y);
-  }
-
-  .after\:bg-orangecustom:after {
-    content: var(--tw-content);
-    background-color: #ff6d00;
-  }
-
-  .after\:transition-transform:after {
-    content: var(--tw-content);
-    transition-property: transform, translate, scale, rotate;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-  }
-
-  .after\:duration-300:after {
-    content: var(--tw-content);
-    --tw-duration: .3s;
-    transition-duration: .3s;
-  }
-
-  .after\:ease-in-out:after {
-    content: var(--tw-content);
-    --tw-ease: var(--ease-in-out);
-    transition-timing-function: var(--ease-in-out);
-  }
-
-  .after\:content-\[\'\'\]:after {
-    content: var(--tw-content);
-    --tw-content: "";
-    content: var(--tw-content);
-  }
-
-  @media (hover: hover) {
-    .group-hover\:after\:scale-x-100:is(:where(.group):hover *):after {
-      content: var(--tw-content);
-      --tw-scale-x: 100%;
-      scale: var(--tw-scale-x) var(--tw-scale-y);
-    }
-  }
-
   @media (hover: hover) {
     .hover\:scale-102:hover {
       --tw-scale-x: 102%;
       --tw-scale-y: 102%;
       --tw-scale-z: 102%;
       scale: var(--tw-scale-x) var(--tw-scale-y);
-    }
-  }
-
-  @media (hover: hover) {
-    .hover\:scale-105:hover {
-      --tw-scale-x: 105%;
-      --tw-scale-y: 105%;
-      --tw-scale-z: 105%;
-      scale: var(--tw-scale-x) var(--tw-scale-y);
-    }
-  }
-
-  @media (hover: hover) {
-    .hover\:scale-110:hover {
-      --tw-scale-x: 110%;
-      --tw-scale-y: 110%;
-      --tw-scale-z: 110%;
-      scale: var(--tw-scale-x) var(--tw-scale-y);
-    }
-  }
-
-  @media (hover: hover) {
-    .hover\:border:hover {
-      border-style: var(--tw-border-style);
-      border-width: 1px;
     }
   }
 
@@ -1330,12 +1226,6 @@ body {
 @property --tw-ease {
   syntax: "*";
   inherits: false
-}
-
-@property --tw-content {
-  syntax: "*";
-  inherits: false;
-  initial-value: "";
 }
 
 
